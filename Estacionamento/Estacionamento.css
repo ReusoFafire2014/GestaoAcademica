@@ -1,0 +1,37 @@
+
+.menu {
+	border: 10px groove;
+    width: 1200px;
+    border-color: #00A0D4;
+    margin-left: 80px;
+}
+
+.consulta {
+	
+}
+
+table {
+	border: 10px groove;
+    width: 1200px;
+    border-color: #00A0D4;
+    margin-left: 0px;
+}
+
+p {
+	text-align: center;
+	font-size: 20px
+}
+
+thead {
+	background: white;
+}
+
+td {
+	background: white;
+}
+
+body {
+	font-family: Arial;
+}
+
+
