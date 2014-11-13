@@ -6,16 +6,15 @@
     margin-left: 80px;
 }
 
-.consulta {
-	
-}
 
 table {
 	border: 10px groove;
     width: 1200px;
     border-color: #00A0D4;
     margin-left: 0px;
+    text-align: center;
 }
+
 
 p {
 	text-align: center;
