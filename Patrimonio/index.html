@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
-    rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link href="../Componentes/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/estilo.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../Componentes/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../Componentes/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/util.js"></script>
   </head>
   
   <body class="">
@@ -51,52 +52,55 @@
               <div class="col-md-6">
                 <div class="form-group" draggable="true">
                   <div class="col-sm-4">
-                    <label for="inputEmail3" class="control-label">Descrição</label>
+                    <label for="descricao" class="control-label">Descrição</label>
                   </div>
                   <div class="col-sm-8">
-                    <input type="text" class="form-control" id="inputCodigo" size="5">
+                    <input type="text" class="form-control" id="descricao" size="5">
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-sm-4">
-                    <label for="inputPassword3" class="control-label">Marca/Modelo</label>
+                    <label for="marca-modelo" class="control-label">Marca/Modelo</label>
                   </div>
                   <div class="col-sm-8">
-                    <input type="text" class="form-control" id="inputMarcaModelo">
+                    <input type="text" class="form-control" id="marca-modelo">
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-sm-4">
-                    <label for="inputPassword3" class="control-label" contenteditable="true">Nº Plaqueta</label>
+                    <label for="numero-plaqueta" class="control-label" contenteditable="true">Nº Plaqueta</label>
                   </div>
                   <div class="col-sm-8">
-                    <input type="text" class="form-control" id="inputMarcaModelo">
+                    <input type="text" class="form-control" id="numero-plaqueta">
                   </div>
                 </div>
               </div>
               <div class="col-md-6" draggable="true">
-                                <div class="form-group" draggable="true">
+                <div class="form-group" draggable="true">
                   <div class="col-sm-4">
-                    <label for="inputEmail3" class="control-label">Descrição</label>
+                    <label for="situacao-do-bem" class="control-label">Situação do Bem</label>
                   </div>
                   <div class="col-sm-8">
-                    <input type="text" class="form-control" id="inputCodigo" size="5">
+                    <select class="form-control" id="situacao-do-bem">
+                      <option name="ativo">Ativo</option>
+                      <option name="inativo">Inativo</option>
+                    </select>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-sm-4">
-                    <label for="inputPassword3" class="control-label">Marca/Modelo</label>
+                    <label for="fornecedor" class="control-label">Fornecedor</label>
                   </div>
                   <div class="col-sm-8">
-                    <input type="text" class="form-control" id="inputMarcaModelo">
+                    <input type="text" class="form-control" id="fornecedor">
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-sm-4">
-                    <label for="inputPassword3" class="control-label" contenteditable="true">Nº Plaqueta</label>
+                    <label for="data-compra" class="control-label" contenteditable="true">Data de Compra</label>
                   </div>
                   <div class="col-sm-8">
-                    <input type="text" class="form-control" id="inputMarcaModelo">
+                    <input type="date" class="form-control" id="data-compra">
                   </div>
                 </div>
               </div>
