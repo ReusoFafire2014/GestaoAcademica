@@ -1,4 +1,7 @@
 function criarTabela(parametro1, parametro2){
+    
+    document.getElementById("container").innerHTML="";
+
     // vamos criar o elemento HTML table
    if ((parametro1.value == '') && (parametro2.value == '')) {
 
