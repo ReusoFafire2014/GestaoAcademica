@@ -26,4 +26,16 @@ Módulos
 - Histórico Escolar (André e Patrícia)
  	- Código no repositório: Ok
 	- Página padronizada: Não
+	
+Módulo | Equipe | Repositório | 
+-------|-------
+Alunos| Manoela e Maurício| Ok
+Professores| A. Carlos e Camila | Não
+Manutenção|J. Augusto, Lucas, Filipe| Não
+Estacionamento | Heitor e Ravel| Ok
+Cantina | Mirella e Wellington | Ok
+Biblioteca | Claudiany e Daniele | Não
+Histórico | André e Patrícia | Ok
+
+
 
