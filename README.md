@@ -27,15 +27,15 @@ Módulos
  	- Código no repositório: Ok
 	- Página padronizada: Não
 	
-|Módulo  | Equipe | Repositório | Padronização|
+|Módulo  | Equipe | Repositório | Padronização| cadastro| Listar|  Salvar |
 |-------|---------| --------------|---------|
-|Alunos  | Manoela e Maurício| Ok | Não |
-|Professores| A. Carlos e Camila | Não | Não |
-|Manutenção|J. Augusto, Lucas, Filipe| Não | Não |
-|Estacionamento | Heitor e Ravel| Ok | Não |
-|Cantina | Mirella e Wellington | Ok | Não |
-|Biblioteca | Claudiany e Daniele | Não | Não |
-|Histórico | André e Patrícia | Ok | Não |
+|Alunos  | Manoela e Maurício| Ok | Não | Não | Não | Não |
+|Professores| A. Carlos e Camila | Não | Não | Não | Não | Não |
+|Manutenção|J. Augusto, Lucas, Filipe| Não | Não | Não | Não | Não |
+|Estacionamento | Heitor e Ravel| Ok | Não | Não | Não | Não |
+|Cantina | Mirella e Wellington | Ok | Não |Não | Não | Não |
+|Biblioteca | Claudiany e Daniele | Não | Não |Não | Não | Não |
+|Histórico | André e Patrícia | Ok | Não |Não | Não | Não |
 
 
 
