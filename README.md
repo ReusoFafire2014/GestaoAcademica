@@ -28,7 +28,7 @@ Módulos
 	- Página padronizada: Não
 	
 |Módulo  | Equipe | Repositório | Padronização| cadastro| Listar|  Salvar |
-|-------|---------| --------------|---------|
+|-------|---------| --------------|---------|--|--|--|
 |Alunos  | Manoela e Maurício| Ok | Não | Não | Não | Não |
 |Professores| A. Carlos e Camila | Não | Não | Não | Não | Não |
 |Manutenção|J. Augusto, Lucas, Filipe| Não | Não | Não | Não | Não |
