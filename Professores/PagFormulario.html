@@ -5,32 +5,37 @@
 		<script type="text/javascript" src="Util.js">
 		
 		</script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	</head>
 
-	<body style="background:#FFFFCC;color:black;">
-		<div style="text-align:center;height:100px;background:#FF9966;"><h1>Faculdade Estácio do Recife</h1></<div>
-		<div style="text-align:center;height:100px;"><h3>Cadastro Aluno</h3></<div>
-				
-		<table>
-			<tr>
-				<td>Nome:</td>
-				<td><input type="text"></td>
-			</tr>
-			<tr>
-				<td>CPF</td>
-				<td><input type="text"></td>
-			</tr>
-			<tr>
-				<td>Data de Nascimento:</td>
-				<td><input type="text"></td>
-			</tr>
-			<tr>
-				<td>Disciplina:</td>
-				<td><input type="text"></td>
-			</tr>
-			<tr>
-				<td><input type="button" value="Salvar" onClick="ExibirMensagen()"></td>
-			</tr>
-		</table>
+	<body >
+		<h1 style="text-align:center;">Faculdade Estácio do Recife</h1>
+		<h3 style="text-align:center;background:#FF9966;color:white;height:30px;">Cadastro Aluno</h3>
+		<br>
+		<center>
+		<div class="table-responsive" style="width:60%;text-align:center;"> 
+			<table class="table table-striped table-bordered">
+				<tr>
+					<td>Nome:</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td>CPF</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td>Data de Nascimento:</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td>Disciplina:</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center;"><input type="button" value="Salvar" onClick="ExibirMensagen()"   class="btn btn-warning" style="width:150px;height:50px;"></td>
+				</tr>
+			</table>
+		</div>
+		</center>
 	</body>
 </html>
