@@ -32,8 +32,8 @@ Módulos
 |Alunos  | Manoela e Maurício| Ok | Não | Não | Não | Não |
 |Professores| A. Carlos e Camila | Ok | X | Não | Não | Não |
 |Manutenção|J. Augusto, Lucas, Filipe| Não | Não | Não | Não | Não |
-|Estacionamento | Heitor e Ravel| Ok | Não | Não | Não | X |
-|Cantina | Mirella e Wellington | Ok | X |X | X | X |
+|Estacionamento | Heitor e Ravel| Ok | Não | Não | Não | STORAGE |
+|Cantina | Mirella e Wellington | Ok | X |X | X | BD |
 |Biblioteca | Claudiany e Daniele | Não | Não |Não | Não | Não |
 |Histórico | André e Patrícia | Ok | Não |Não | Não | Não |
 
