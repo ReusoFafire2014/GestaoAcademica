@@ -15,15 +15,15 @@ Módulos
 	- Código no repositório: Não
 	- Página padronizada: Não
 - Estacionamento (Heitor e Ravel)
-	- Código no repositório: Sim
+	- Código no repositório: Ok
 	- Página padronizada: Não
 - Cantina (Mirella e Wellington)
-	- Código no repositório: Sim
+	- Código no repositório: Ok
 	- Página padronizada: Não
 - Biblioteca (Claudiany e Daniele)
 	- Código no repositório: Não
 	- Página padronizada: Não
 - Histórico Escolar (André e Patrícia)
- 	- Código no repositório: Sim
+ 	- Código no repositório: Ok
 	- Página padronizada: Não
 
