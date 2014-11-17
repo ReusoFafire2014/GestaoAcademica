@@ -6,15 +6,16 @@
     margin-left: 80px;
 }
 
+.consulta {
+	
+}
 
 table {
 	border: 10px groove;
     width: 1200px;
     border-color: #00A0D4;
     margin-left: 0px;
-    text-align: center;
 }
-
 
 p {
 	text-align: center;
@@ -33,4 +34,16 @@ body {
 	font-family: Arial;
 }
 
+#tasks-output li {
+	cursor: pointer;
+}
 
+#form-task {
+	border-top: 1px solid #ddd;
+	padding: 10px 0;
+	margin: 10px 0;
+}
+
+#tasks-output li[data-done="true"] {
+	text-decoration: line-through;
+}
