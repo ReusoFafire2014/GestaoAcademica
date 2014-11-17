@@ -99,15 +99,19 @@
                   <div class="col-sm-4">
                     <label for="data-compra" class="control-label" contenteditable="true">Data de Compra</label>
                   </div>
-                  <div class="col-sm-8">
+                  <div class="col-sm-8" style="left:-70px;">
                     <input type="date" class="form-control" id="data-compra" name="patri_dataCompra">
                   </div>
                 </div>
+
                 <!-- Botão Salvar Cadastro-->
                 <div style="position:relative;left:-580px;">
-                  <button type="button" class="btn btn-primary" onClick="salvar(fomr_cadas_patri)">
-                    <i class="icon-user icon-white"></i>Salvar
-                  </button> 
+                <button type="button" class="btn btn-primary" onClick="salvar(fomr_cadas_patri)">
+                  <i class="icon-user icon-white"></i>Salvar
+                </button> 
+
+
+
                 </div>
               </div>
             </div>
@@ -116,7 +120,10 @@
       </div>
     </div>
 
-    <!-- Função para salvar um patrimonio cadastrado-->
+
+
+
+      <!-- Função para salvar um patrimonio cadastrado-->
       <script type="text/javascript">
       function salvar(fomr_cadas_patri){  
       
@@ -127,6 +134,9 @@
       var fornecedor = document.fomr_cadas_patri.fornecedor.value;
       var dataCompra = document.fomr_cadas_patri.patri_dataCompra.value;
       //alert(descricao+ marca + plaqueta + situacao + fornecedor + dataCompra);
+
+
+
       //OBS Galera, procurar a melhor forma para concatenar esse JSON ai... porque manipular String para gerar o objeto é tenso :(      
       var jsontext = '{"firstname":"Jesper","surname":"Aaberg","phone":["555-0100","555-0120"]}';
       var test = JSON.parse(jsontext);      
@@ -134,5 +144,6 @@
       
       }
       </script>
+
   </body>
 </html>
