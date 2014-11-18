@@ -1,9 +1,17 @@
   <!DOCTYPE html>
   <html>
-  <meta charset="UTF-8"> 
+  <meta charset="UTF-8">   
   <header>
     <title>Cadastro de Usuário</title>
-    <link href="estilos.css" rel="stylesheet" type="text/css" />
+    <!--<style type="text/css">
+    <link href="./css/master.css" rel="stylesheet" type="text/css" /> 
+
+    <style type="text/css">
+        @import url("./css/master.css");
+    </style>
+    -->
+    <link href="css/master.css" rel="stylesheet" media="screen">
+
   </header>
   	<body>
       <div id="Recipiente">
@@ -22,14 +30,15 @@
             <br>
             <h4>E-mail: <input type="text" name="email" value="" placeholder="Ex.: mauricio@mauricio.com.br" size="59px"></h4>
             <br>
-            <h4>Confirmar e-mail: <input type="text" name="confirmaEmail" value="" placeholder="Ex.: mauricio@mauricio.com.br" size="50px"></h4>
+            <h4>Confirmar e-mail: <input class="" type="text" name="confirmaEmail" value="" placeholder="Ex.: mauricio@mauricio.com.br" size="50px"></h4>
             <br>
             <h4>Senha: <input type="password" name="senAluno" value="" placeholder="Ex.: 123456" size="60px"></h4>
             <br> 
             <h4>Confirmar Senha: <input type="password" name="confirmarSenha" value="" placeholder="Ex.: 123456" size="50px"></h4>
             <br>
-            <input type="submit" name="btnSalvar" value=":: Salvar ::" onClick="alert('Salvo com Sucesso!')">&nbsp;
-            <input type="submit" name="btnCancelar" value=":: Cancelar ::" onClick="javascript:location.href='/page0.html'">&nbsp;<input type="submit" name="btnCancelar" value=":: Limpar ::" onClick="javascript:location.href='/page0.html'">
+            <input type="submit" class="btn btn-info" name="btnSalvar" value="Salvar" onClick="alert('Salvo com Sucesso!')">&nbsp;
+            <input type="submit" class="btn btn-info" name="btnCancelar" value="Cancelar" onClick="javascript:location.href='/page0.html'">&nbsp;
+            <input type="submit" class="btn btn-info" name="btnCancelar" value="Limpar" onClick="javascript:location.href='/page0.html'">
           </form>
         </div> 
         </div>
