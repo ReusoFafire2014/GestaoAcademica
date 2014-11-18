@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Controle Patrimonial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="../Componentes/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../Componentes/jquery.dataTables.css" rel="stylesheet" type="text/css">
+    <link href="../css/estilo.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../Componentes/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../Componentes/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Componentes/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../js/util.js"></script>
+    <script type="text/javascript" src="dados.js"></script>
+  </head>
+  
+  <body class="">
+    <table id="patrimonio" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Descrição</th>
+                <th>Marca/Modelo</th>
+                <th>Nº Plaqueta</th>
+                <th>Situação</th>
+                <th>Fornecedor</th>
+                <th>Data de Compra</th>
+            </tr>
+        </thead>
+ 
+        <tfoot>
+            <tr>
+                <th>Descrição</th>
+                <th>Marca/Modelo</th>
+                <th>Nº Plaqueta</th>
+                <th>Situação</th>
+                <th>Fornecedor</th>
+                <th>Data de Compra</th>
+            </tr>
+        </tfoot>
+    </table>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#patrimonio').dataTable( {
+        "ajax": 'dados.js'
+      });
+    });
+  </script>
+</html>

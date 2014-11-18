@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Controle Patrimonial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="../Componentes/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../Componentes/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/estilo.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../Componentes/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../Componentes/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/util.js"></script>
+  </head>
+  
+  <body class="">
+    <div class="navbar navbar-default navbar-static-top">
+      <style>
+        .body{padding-top:70px}
+      </style>
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Controle Patrimonial</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">Dashboard</a>
+            </li>
+            <li class="active">
+              <a href="#">Cadastro</a>
+            </li>
+            <li>
+              <a href="#">Relatórios</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form class="form-horizontal" role="form" draggable="true" name="fomr_cadas_patri">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group" draggable="true">
+                  <div class="col-sm-4">
+                    <label for="descricao" class="control-label">Descrição</label>
+                  </div>
+                  <div class="col-sm-8" style="left:-90px;">
+                    <input type="text" class="form-control" id="descricao" size="5" name="patri_descricao">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-4">
+                    <label for="marca-modelo" class="control-label">Marca/Modelo</label>
+                  </div>
+                  <div class="col-sm-8" style="left:-90px;">
+                    <input type="text" class="form-control" id="marca-modelo" name="patri_marca">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-4">
+                    <label for="numero-plaqueta" class="control-label" contenteditable="true">Nº Plaqueta</label>
+                  </div>
+                  <div class="col-sm-8" style="left:-90px;">
+                    <input type="text" class="form-control" id="numero-plaqueta" name="patri_plaqueta">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" draggable="true">
+                <div class="form-group" draggable="true">
+                  <div class="col-sm-4">
+                    <label for="situacao-do-bem" class="control-label">Situação do Bem</label>
+                  </div>
+                  <div class="col-sm-8" style="left:-70px;">
+                    <select class="form-control" id="situacao-do-bem" name="patri_situacao">
+                      <option name="ativo" value="Ativo">Ativo</option>
+                      <option name="inativo" value="Inativo">Inativo</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-4">
+                    <label for="fornecedor" class="control-label">Fornecedor</label>
+                  </div>
+                  <div class="col-sm-8" style="left:-70px;">
+                    <input type="text" class="form-control" id="fornecedor" name="patri_fornecedor">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-4">
+                    <label for="data-compra" class="control-label" contenteditable="true">Data de Compra</label>
+                  </div>
+                  <div class="col-sm-8" style="left:-70px;">
+                    <input type="date" class="form-control" id="data-compra" name="patri_dataCompra">
+                  </div>
+                </div>
+
+                <!-- Botão Salvar Cadastro-->
+                <div style="position:relative;left:-580px;">
+                <button type="button" class="btn btn-primary" onClick="salvar(fomr_cadas_patri)">
+                  <i class="icon-user icon-white"></i>Salvar
+                </button> 
+
+
+
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+      <!-- Função para salvar um patrimonio cadastrado-->
+      <script type="text/javascript">
+      function salvar(fomr_cadas_patri){  
+      
+      var descricao = document.fomr_cadas_patri.patri_descricao.value; 
+      var marca = document.fomr_cadas_patri.patri_marca.value;
+      var plaqueta = document.fomr_cadas_patri.patri_plaqueta.value;
+      var situacao = document.fomr_cadas_patri.patri_situacao.value;
+      var fornecedor = document.fomr_cadas_patri.fornecedor.value;
+      var dataCompra = document.fomr_cadas_patri.patri_dataCompra.value;
+      //alert(descricao+ marca + plaqueta + situacao + fornecedor + dataCompra);
+
+
+
+      //OBS Galera, procurar a melhor forma para concatenar esse JSON ai... porque manipular String para gerar o objeto é tenso :(      
+      var jsontext = '{"firstname":"Jesper","surname":"Aaberg","phone":["555-0100","555-0120"]}';
+      var test = JSON.parse(jsontext);      
+      alert(test.firstname);
+      
+      }
+      </script>
+
+  </body>
+</html>
