@@ -126,6 +126,7 @@
 
       <!-- Função para salvar um patrimonio cadastrado-->
       <script type="text/javascript">
+
       function salvar(fomr_cadas_patri){  
       
       var descricao = document.fomr_cadas_patri.patri_descricao.value; 
@@ -134,16 +135,20 @@
       var situacao = document.fomr_cadas_patri.patri_situacao.value;
       var fornecedor = document.fomr_cadas_patri.fornecedor.value;
       var dataCompra = document.fomr_cadas_patri.patri_dataCompra.value;
-      //alert(descricao+ marca + plaqueta + situacao + fornecedor + dataCompra);
+           
+      //Criação do Objeto 
+      var patrimonio = new Object();
+      patrimonio.descricao = descricao;
+      patrimonio.marca = marca;
+      patrimonio.plaqueta = plaqueta;
+      patrimonio.situacao = situacao;
+      patrimonio.fornecedor = fornecedor;
+      patrimonio.dataCompra = dataCompra;
 
-
-
-      //OBS Galera, procurar a melhor forma para concatenar esse JSON ai... porque manipular String para gerar o objeto é tenso :(      
-      var jsontext = '{"firstname":"Jesper","surname":"Aaberg","phone":["555-0100","555-0120"]}';
-      var test = JSON.parse(jsontext);      
-      alert(test.firstname);
+      //Criação Objeto em JSON
+      var Json = JSON.stringify(patrimonio);
+      document.write(Json);
       
-      }
       </script>
 
   </body>
