@@ -27,7 +27,7 @@ Módulos
  	- Código no repositório: Ok
 	- Página padronizada: Não
 	
-|Módulo  | Equipe | Repositório | Bootstrap| cadastro| Listar|  Salvar |
+|Módulo  | Equipe | Github (1) | Bootstrap (4))| cadastro (3)| Listar (2)|  Salvar(5) |
 |--------|---------| -----------|-------------|---------|-------|---------|
 |Alunos  | Manoela e Maurício| Ok | Não | Não | Não | Não |
 |Professores| A. Carlos e Camila | Ok | X | Não | Não | Não |
