@@ -1,47 +1,47 @@
 
 body{
-	background-color: #2E4d7B;
+    background-color: #2E4d7B;
 }
 
 p b{
-	color: white;
+    color: white;
 }
 
 .imagem {
-	width: 70px;
-	height: 70px;
+    width: 70px;
+    height: 70px;
 }
 
 .div_conteudo{
-	text-align: left;	
+    text-align: left;   
 }
 
 .div_conteudo2{
-	text-align: center;	
+    text-align: center; 
 }
 
 .div_header {
     color: #ffffff;
     background-color:  #46b8da;
     border-color: #46b8da;
-	text-align: center;
-	border: 2px solid black;
+    text-align: center;
+    border: 2px solid black;
 }
 
 .div_header_1 {
     color: #ffffff;
     background-color:  #46b8da;
     border-color: #46b8da;
-	text-align: center;
-	width: 100%;
+    text-align: center;
+    width: 100%;
 }
 
 .div_header_2 {
     color: #ffffff;
     background-color:  #46b8da;
     border-color: #46b8da;
-	text-align: center;
-	width: 100%;
+    text-align: center;
+    width: 100%;
 }
 
 .div_header h1{
@@ -53,23 +53,23 @@ p b{
 }
 
 .div_conteudo .botao {
-	background-color:  white;   
+    background-color:  white;   
 }
 
 .div_conteudo  .label {
-	font-size: 13px;
-	font-style: italic;
-	background-color: #2E4d7B;
-	color: white;
-	width: 400px;
-	border: 0 solid #2E4d7B;
-	height: 45px;
+    font-size: 13px;
+    font-style: italic;
+    background-color: #2E4d7B;
+    color: white;
+    width: 400px;
+    border: 0 solid #2E4d7B;
+    height: 45px;
 }
 
 .div_alinhar_right{
-	text-align: right;
-	width: 200px;
-	margin-left: -30px;
+    text-align: right;
+    width: 200px;
+    margin-left: -30px;
 }
 
 #sse2{    
@@ -118,34 +118,58 @@ p b{
 }
 
 #tituloid {
-	width: 300px;
+    width: 300px;
 }
 
 #autorid{
-	width: 300px;
+    width: 300px;
 }
 
 #anoid{
-	width: 74px;
+    width: 74px;
 }
 
 #paginasid{
-	width: 74px;
+    width: 74px;
 }
 
 #generoid{
-	width: 290px;
+    width: 290px;
 }
 
 #editoraid{
-	width: 290px;
+    width: 290px;
 }
 
 .div_formulario{
-	text-align: left;	
+    text-align: left;   
 }
 
 form label{
-	color: white;
-	font-family: arial-black;		
+    color: white;
+    font-family: arial-black;       
+}
+
+.tabela_grid{
+    border: 1px solid black;
+    width: 600px;    
+}
+
+.div_grid table{
+    text-align: center;
+
+}
+
+table {
+    border: 2px groove;
+    width: 650px;
+    border-color: #c0392b;
+}
+
+thead {
+    background: #3498db;
+}
+
+td {
+    background: #95a5a6;
 }
