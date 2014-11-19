@@ -105,9 +105,16 @@ $(function(){
                 numeroPlaqueta = i;
             else numeroPlaqueta = ++i["Plaqueta"];
         }
-        return numeroPlaqueta;
+        $("#patri_plaqueta").val(numeroPlaqueta); // Define o valor da próxima plaqueta
 	}
-	$("#patri_plaqueta").val(obterUltimaPlaqueta());
+	obterUltimaPlaqueta();
+
+	// Limpa o form e redefine o valor da plaqueta no campo
+	$('#btnLimpar').click(function(e){
+		e.preventDefault();
+  		$(this).closest('form').get(0).reset();
+		obterUltimaPlaqueta();
+	});
 
 	//Checa se o valor já existe para determinada propriedade
 	function checarValorExistente(propriedade, valor){

@@ -8,11 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="../Componentes/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../Componentes/jquery.dataTables.css" rel="stylesheet" type="text/css">
+    <link href="../Componentes/datatables/jquery.dataTables.css" rel="stylesheet" type="text/css">
     <link href="../css/estilo.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="../Componentes/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="../Componentes/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../Componentes/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../Componentes/datatables/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="../js/util.js"></script>
     <script type="text/javascript" src="funcoes.js"></script>
   </head>
@@ -22,9 +22,13 @@
   </body>
   <script type="text/javascript">
     $(document).ready(function() {
-      /*$('#patrimonio').dataTable( {
-        "ajax": 'dados.js'
-      });*/
+        $(document).ready(function(){
+            $('#patrimonio').dataTable({
+                "language": {
+                    "url": "../Componentes/datatables/Portuguese-Brasil.txt"
+                }
+            });
+        });
     });
   </script>
 </html>
