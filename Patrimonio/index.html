@@ -13,6 +13,8 @@
     <script type="text/javascript" src="../Componentes/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="../Componentes/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/util.js"></script>
+    <script type="text/javascript" src="funcoes.js"></script>
+
   </head>
   
   <body class="">
@@ -48,7 +50,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <form class="form-horizontal" role="form" draggable="true" name="fomr_cadas_patri">
+          <form class="form-horizontal" role="form" draggable="true" name="fomr_cadas_patri" id="fomr_cadas_patri">
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group" draggable="true">
@@ -56,7 +58,7 @@
                     <label for="descricao" class="control-label">Descrição</label>
                   </div>
                   <div class="col-sm-8" style="left:-90px;">
-                    <input type="text" class="form-control" id="descricao" size="5" name="patri_descricao">
+                    <input type="text" class="form-control" id="patri_descricao" size="5" name="patri_descricao">
                   </div>
                 </div>
                 <div class="form-group">
@@ -64,7 +66,7 @@
                     <label for="marca-modelo" class="control-label">Marca/Modelo</label>
                   </div>
                   <div class="col-sm-8" style="left:-90px;">
-                    <input type="text" class="form-control" id="marca-modelo" name="patri_marca">
+                    <input type="text" class="form-control" id="patri_marca" name="patri_marca">
                   </div>
                 </div>
                 <div class="form-group">
@@ -72,7 +74,7 @@
                     <label for="numero-plaqueta" class="control-label" contenteditable="true">Nº Plaqueta</label>
                   </div>
                   <div class="col-sm-8" style="left:-90px;">
-                    <input type="text" class="form-control" id="numero-plaqueta" name="patri_plaqueta">
+                    <input type="text" class="form-control" id="patri_plaqueta" name="patri_plaqueta" readonly="readonly">
                   </div>
                 </div>
               </div>
@@ -82,7 +84,7 @@
                     <label for="situacao-do-bem" class="control-label">Situação do Bem</label>
                   </div>
                   <div class="col-sm-8" style="left:-70px;">
-                    <select class="form-control" id="situacao-do-bem" name="patri_situacao">
+                    <select class="form-control" id="patri_situacao" name="patri_situacao">
                       <option name="ativo" value="Ativo">Ativo</option>
                       <option name="inativo" value="Inativo">Inativo</option>
                     </select>
@@ -93,7 +95,7 @@
                     <label for="fornecedor" class="control-label">Fornecedor</label>
                   </div>
                   <div class="col-sm-8" style="left:-70px;">
-                    <input type="text" class="form-control" id="fornecedor" name="patri_fornecedor">
+                    <input type="text" class="form-control" id="patri_fornecedor" name="patri_fornecedor">
                   </div>
                 </div>
                 <div class="form-group">
@@ -101,17 +103,12 @@
                     <label for="data-compra" class="control-label" contenteditable="true">Data de Compra</label>
                   </div>
                   <div class="col-sm-8" style="left:-70px;">
-                    <input type="date" class="form-control" id="data-compra" name="patri_dataCompra">
+                    <input type="date" class="form-control" id="patri_dataCompra" name="patri_dataCompra">
                   </div>
                 </div>
 
                 <!-- Botão Salvar Cadastro-->
-                <div style="position:relative;left:-580px;">
-                <button type="button" class="btn btn-primary" onClick="salvar(fomr_cadas_patri)">
-                  <i class="icon-user icon-white"></i>Salvar
-                </button> 
-
-
+                <input type="submit" value="Salvar" id="btnSalvar"/>
 
                 </div>
               </div>
@@ -120,31 +117,6 @@
         </div>
       </div>
     </div>
-
-
-
-
-      <!-- Função para salvar um patrimonio cadastrado-->
-      <script type="text/javascript">
-      function salvar(fomr_cadas_patri){  
-      
-      var descricao = document.fomr_cadas_patri.patri_descricao.value; 
-      var marca = document.fomr_cadas_patri.patri_marca.value;
-      var plaqueta = document.fomr_cadas_patri.patri_plaqueta.value;
-      var situacao = document.fomr_cadas_patri.patri_situacao.value;
-      var fornecedor = document.fomr_cadas_patri.fornecedor.value;
-      var dataCompra = document.fomr_cadas_patri.patri_dataCompra.value;
-      //alert(descricao+ marca + plaqueta + situacao + fornecedor + dataCompra);
-
-
-
-      //OBS Galera, procurar a melhor forma para concatenar esse JSON ai... porque manipular String para gerar o objeto é tenso :(      
-      var jsontext = '{"firstname":"Jesper","surname":"Aaberg","phone":["555-0100","555-0120"]}';
-      var test = JSON.parse(jsontext);      
-      alert(test.firstname);
-      
-      }
-      </script>
 
   </body>
 </html>

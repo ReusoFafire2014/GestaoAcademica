@@ -44,9 +44,21 @@
   </body>
   <script type="text/javascript">
     $(document).ready(function() {
-      $('#patrimonio').dataTable( {
-        "ajax": "dados.js"
-      });
+        $('#patrimonio').dataTable( {
+            "ajax": {
+            "url": "dadosArrayFlat.js",
+            "dataSrc": ""
+        },
+        "columns": [
+            { "data": "descricao" },
+            { "data": "marca" },
+            { "data": "plaqueta" },
+            { "data": "situacao" },
+            { "data": "fornecedor" },
+            { "data": "dataCompra" }
+        ]
+        });
+
     });
   </script>
 </html>

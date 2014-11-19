@@ -14,39 +14,17 @@
     <script type="text/javascript" src="../Componentes/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../Componentes/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="../js/util.js"></script>
-    <script type="text/javascript" src="dados.js"></script>
+    <script type="text/javascript" src="funcoes.js"></script>
   </head>
   
   <body class="">
-    <table id="patrimonio" class="display" cellspacing="0" width="100%">
-        <thead>
-            <tr>
-                <th>Descrição</th>
-                <th>Marca/Modelo</th>
-                <th>Nº Plaqueta</th>
-                <th>Situação</th>
-                <th>Fornecedor</th>
-                <th>Data de Compra</th>
-            </tr>
-        </thead>
- 
-        <tfoot>
-            <tr>
-                <th>Descrição</th>
-                <th>Marca/Modelo</th>
-                <th>Nº Plaqueta</th>
-                <th>Situação</th>
-                <th>Fornecedor</th>
-                <th>Data de Compra</th>
-            </tr>
-        </tfoot>
-    </table>
+    <table id="patrimonio" class="display" cellspacing="0" width="100%"></table>
   </body>
   <script type="text/javascript">
     $(document).ready(function() {
-      $('#patrimonio').dataTable( {
-        "ajax": "dados.js"
-      });
+      /*$('#patrimonio').dataTable( {
+        "ajax": 'dados.js'
+      });*/
     });
   </script>
 </html>
