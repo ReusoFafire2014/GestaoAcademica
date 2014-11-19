@@ -61,13 +61,14 @@ $(function(){
 		$("#patrimonio").html(
 			"<thead>"+
 			"	<tr>"+
-			"<th></th>"+
-			"	<th>Descrição</th>"+
-			"	<th>Marca/Modelo</th>"+
-			"	<th>Nº Plaqueta</th>"+
-			"	<th>Situação</th>"+
-			"	<th>Fornecedor</th>"+
-			"	<th>Data de Compra</th>"+
+				"	<th></th>"+
+				"	<th>Nº Plaqueta</th>"+
+				"	<th>Descrição</th>"+
+				"	<th>Marca/Modelo</th>"+
+				"	<th>Situação</th>"+
+				"	<th>Fornecedor</th>"+
+				"	<th>Data de Compra</th>"+
+				"	<th></th>"+
 			"	</tr>"+
 			"</thead>"+
 			"<tbody>"+
@@ -77,13 +78,14 @@ $(function(){
 		 for(var i in tbPatrimonio){
 			var patrimonio = JSON.parse(tbPatrimonio[i]);
 		  	$("#patrimonio tbody").append("<tr>"+
-									 	 "	<td><img src='edit.png' alt='"+i+"' title='Editar' class='btnEditar'/><img src='delete.png' alt='"+i+"' title='Excluir' class='btnExcluir'/></td>" + 
+									 	 "	<td style='text-align: center'><img src='delete.png' alt='"+i+"' title='Excluir' class='btnExcluir' style='cursor: pointer' /></td>" + 
+									 	 "	<td>"+patrimonio.Plaqueta+"</td>" + 
 										 "	<td>"+patrimonio.Descricao+"</td>" + 
 										 "	<td>"+patrimonio.Marca+"</td>" + 
-										 "	<td>"+patrimonio.Plaqueta+"</td>" + 
 										 "	<td>"+patrimonio.Situacao+"</td>" + 
 										 "	<td>"+patrimonio.Fornecedor+"</td>" +  
 										 "	<td>"+patrimonio.DataCompra+"</td>" + 
+										 "	<td style='text-align: center'><img src='edit.png' alt='"+i+"' title='Editar' class='btnEditar'/></td>" + 
 		  								 "</tr>");
 		 }
 	}
