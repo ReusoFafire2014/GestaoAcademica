@@ -4,22 +4,25 @@ $(function(){
 	
 	var indice_selecionado = -1;
 
-	var tbPatrimonio = localStorage.getItem("tbPatrimonio"); // Recupera os dados armazenados
+	// Copia os dados armazenados no Local Storage no formato string.
+	var tbPatrimonio = localStorage.getItem("tbPatrimonio");
 
-	tbPatrimonio = JSON.parse(tbPatrimonio); // Converte string para objeto
+	// Converte a cópia dos dados de string para o formato JSON.
+	tbPatrimonio = JSON.parse(tbPatrimonio); 
 
-	if(tbPatrimonio == null) tbPatrimonio = []; // Caso não haja conteúdo, iniciamos um vetor vazio
+	if(tbPatrimonio == null) tbPatrimonio = []; // Caso não haja conteúdo no Local Storage, iniciamos um JSON vazio.
 
 
     //Método adicionar
 	function Adicionar(){
-		var cli = GetPatrimonio("Plaqueta", $("#patri_plaqueta").val());
-		if(cli != null){
+		//var cli = checarValorExistente("Plaqueta", $("#patri_plaqueta").val());
+		if(checarValorExistente("Plaqueta", $("#patri_plaqueta").val()) != null){
 			alert("Plaqueta já cadastrada.");
 			return;
 		}
 
-		var patrimonio = JSON.stringify({
+		// Obtem os valores informados nos campos e converte para o formato JSON
+		var patrimonio = JSON.stringify({ 
 			Descricao   : $("#patri_descricao").val(),
 			Marca       : $("#patri_marca").val(),
 			Plaqueta    : $("#patri_plaqueta").val(),
@@ -28,8 +31,12 @@ $(function(){
 			DataCompra  : $("#patri_dataCompra").val()
 		});
 
+		 // Adiciona o JSON criado acima à cópia dos dados
 		tbPatrimonio.push(patrimonio);
+
+		// Redefine o localStorage com a cópia dos dados
 		localStorage.setItem("tbPatrimonio", JSON.stringify(tbPatrimonio));
+
 		return true;
 	}
 
@@ -48,7 +55,7 @@ $(function(){
 		return true;
 	}
 
-
+	// Monta a tabela de listagem com os dados do Local Storage
 	function Listar(){
 		$("#patrimonio").html("");
 		$("#patrimonio").html(
@@ -81,7 +88,7 @@ $(function(){
 		 }
 	}
 
-
+	// Exclui os dados do do Local Storage
 	function Excluir(){
 		indice_selecionado = parseInt($(this).attr("alt"));
 		tbPatrimonio.splice(indice_selecionado, 1);
@@ -89,9 +96,21 @@ $(function(){
 		alert("Registro excluído.");
 	}
 
+	//Obtém o valor da útima plaqueta de patrimônio
+	function obterUltimaPlaqueta(){
+		var numeroPlaqueta = 1;
+        for (var item in tbPatrimonio) {
+            var i = JSON.parse(tbPatrimonio[item]);
+            if (i["Plaqueta"] > numeroPlaqueta)
+                numeroPlaqueta = i;
+            else numeroPlaqueta = ++i["Plaqueta"];
+        }
+        return numeroPlaqueta;
+	}
+	$("#patri_plaqueta").val(obterUltimaPlaqueta());
 
-	//Método utilizado para salvar
-	function GetPatrimonio(propriedade, valor){
+	//Checa se o valor já existe para determinada propriedade
+	function checarValorExistente(propriedade, valor){
 		var patrimonio = null;
         for (var item in tbPatrimonio) {
             var i = JSON.parse(tbPatrimonio[item]);
