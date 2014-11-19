@@ -29,3 +29,32 @@ Módulos
 	- Manoela e Maurício
 - Biblioteca
 	- Claudiany e Daniele
+	
+# Atividade
+
+### Index
+
+Nomeia/renomeie a página principal (Home) do seu módulo para index.html
+
+### README
+
+Crie um arquivo README na raiz do módulo da sua dupla descrevendo:
+
+- Nome da dupla
+- Objetivo do módulo
+- O que foi feito
+- E com respostas para o questionário abaixo
+
+### Questionário
+	
+- O que é reuso de software? 
+- Quais os benefícios esperados do reuso de software?
+- Diferencie Reuso Ad Hoc de Reuso Sistemático
+- Diferencie componentes de software e frameworks
+- O que significa na prática a sigla: Service Oriented Architecture?
+- Diferencie IaaS (Infrastructure as a Service) de PaaS (Platform as a Service)
+- Cite um exemplo de componente encontrado em cada um desses repositórios públicos: Packagist, NPM, Rubygems, Pypi.
+- Dê exemplo de dois frameworks front end diferentes dos utilizados em sala.
+- Quais as vantagens/motivações para utilização de um framework como esse? Quais as desvantagens? 
+- Diferencie reuso generativo e reuso composicional.
+- Apresente vantagens e desvantagens do reuso generativo e do composicional.
