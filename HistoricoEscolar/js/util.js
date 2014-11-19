@@ -9,8 +9,8 @@ var historicoOutput;
 window.addEventListener("load",function(){
 	//guarda em uma variável o elemento tasks-output
 	historicoOutput = document.getElementById("tasks-output")
-	if(localStorage.getItem("tasks")){
-		historico = JSON.parse(localStorage.getItem("tasks"));
+	if(localStorage.getItem("hist")){
+		historico = JSON.parse(localStorage.getItem("hist"));
 		showList()
 	}else{
 		historico = [];
@@ -57,7 +57,7 @@ function onSubmit(e){
 
 function saveList(){
 	//converte os dados em string e salva no local storage 
-	localStorage.setItem("tasks",JSON.stringify(historico));
+	localStorage.setItem("hist",JSON.stringify(historico));
 }
 
 function clearList(){
@@ -78,31 +78,31 @@ function showList(){
 	//mostra a lista de todo
 	var total = historico.length;
 	if(total > 0){
-		var htmlTemp = "<ul>"; 
+		var htmlTemp = "<ul class='list-group'>"; 
 		for(var i = 0; i < total; i++){
 			htmlTemp 
-			+= "<li data-id='"
+			+= "<li class='list-group-item' data-id='"
 			+historico[i].id
 			+"' data-done='" 
 			+ historico[i].done 
 			+ "'>"
-			+ "Nome:"
+			+ "<b>Nome:</b> "
 			+ historico[i].Nome 
-			+ " - "
-			+ "Disciplina:"
+			+ " | "
+			+ "<b>Disciplina:</b> "
 			+ historico[i].Disciplina 
-			+ " - "
-			+ " Nota1: "
+			+ " | "
+			+ "<b>Nota 1:</b> "
 			+ historico[i].Nota1
-			+" - "
-			+ " Nota2: "
+			+" | "
+			+ "<b>Nota 2:</b> "
 		    + historico[i].Nota2 
 			+" - "
-			+ " Média: "
+			+ "<b>Média:</b> "
 			+ historico[i].Media
 			+"</li>"
 		}
-		historicoOutput.innerHTML = htmlTemp;
+		historicoOutput.innerHTML = htmlTemp + "</ul>";
 	}else{
 		historicoOutput.innerHTML = "Cadastro de notas não realizado!"
 	}
