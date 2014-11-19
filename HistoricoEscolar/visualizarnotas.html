@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head lang="pt-BR">
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>UFO - Universidade Federal de Oz</title>
 
@@ -38,8 +38,8 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li ><a href="visualizarnotas.html">Visualizar Notas</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="visualizarnotas.html">Visualizar Notas</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -50,37 +50,14 @@
 		
 
 		<div class="page-header">
-			<h1>Histórico Escolar</h1>
-	 </div>   
-   <div id="tasks-output" style="display: none;"></div>     
+			<h1>Visualizar Notas</h1>
+	    </div>
 		<p>
-      <form id="form-task" onsubmit="exibirMensagem()">
-        <p>
-          <label>Nome:</label>
-          <br />
-          <input type="text" name="Nome" placeholder="Informe o nome do Aluno" required />
-        </p>
-        <p>
-          <label>Disciplina:</label>
-          <br />
-          <input type="text" name="Disciplina" placeholder="Informe a disciplina" required />
-        </p>
-        <p>
-          <label>Nota 1:</label>
-          <br />
-          <input type="text" name="Nota1" placeholder="Informe a nota da 1ª prova" required />
-        </p>
-        <p>
-          <label>Nota 2:</label>
-          <br />
-          <input type="text" name="Nota2" placeholder="Informe a nota da 2ª prova" required />
-        </p>
-        <p>
-          <input type="submit" value="Salvar">
-        </p>
-      </form>
-			
+			<div id="tasks-output"></div>
 		</p>
+    <p>
+      <button id="limpar">Limpar</button>
+    </p>
 	</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

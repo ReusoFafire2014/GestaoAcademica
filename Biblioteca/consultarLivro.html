@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<head>
+	<meta charset="UTF-8">
+	<title>Biblioteca Hogwarts</title>
+</head>
+<body>
+	<div class="div_header">
+		<div class="div_header_2">
+			<br />
+			<img src="img/imgLogo1.png" class="imagem">		
+			<div class="div_header_1">			
+				<h1>Consultar Livros</h1>
+			</div>	
+		</div>	
+    </div>	
+	<div class="div_conteudo2">	
+		<br />
+		<div id="div_formulario">
+			<form name="formulario_cadastrar_livros">
+				<p class="titulo"> 
+					<label for="titulo">Título</label> &nbsp;
+					<input type="text"  id="tituloid" placeholder="Ex.: Percy Jackson: O ladrão de raios" required="required" name="titulo" /> 
+				</p>				
+				<p class="autor"> 
+					<label for="autor">Autor</label> &nbsp;
+					<input type="text"  id="autorid" placeholder="Ex.: Percy Jackson: O ladrão de raios" required="required" name="autor" /> 
+				</p>					
+				<p class="genero"> 
+					<label for="genero">Gênero</label> &nbsp;
+					<input type="text"  id="generoid" placeholder="Ex.: Aventura" required="required" name="genero" /> 
+				</p>				
+				<p class="editora"> 
+					<label for="editora">Editora</label> &nbsp;
+					<input type="drop"  id="editoraid" placeholder="Ex.: Globo" required="required" name="editora" /> 
+				</p>
+				<p class="botao"> 
+					 <input type="submit" name="btnPesquisar" value="Pesquisar" />  &nbsp;&nbsp;
+					 <input type="submit" name="btnLimpar" value="Limpar" />  &nbsp;&nbsp;
+					 <input type="submit" name="btnVoltar" value="Voltar"  />
+				</p>				
+			</form>
+		</div>
+		<br />
+		<div class="div_grid" align="center">
+			<table class="tabela_grid">
+				<thead>
+					<tr>
+						<th>Título</th>				
+						<th>Autor</th>
+						<th>Gênero</th>
+						<th>Ano</th>
+						<th>Número de Páginas</th>
+						<th>Editora</th>				
+					</tr>	
+				</thead>
+				<tbody>
+					<tr>
+						<td>Cozinhando Pastéis</td><td>Daniele Barros </td>
+						<td>Culinária</td><td>2006</td>
+						<td>400 pag.</td><td>Tabajara</td>
+					</tr>
+					<tr>
+						<td>Viajar é bom! </td><td>Claudiany Martins </td>
+						<td>Ficção</td><td>2011</td>
+						<td>140 pag.</td><td>Tabajara</td>
+					</tr>
+					<tr>
+						<td>Percy Europeu</td><td>Joel Neto </td>
+						<td>Aventura</td><td>2006</td>
+						<td>200 pag.</td><td>Tabajara</td>
+					</tr>				
+				</tbody>
+			</table>
+			<!-- <a href="#" id="previousPage">
+				Anterior<i class="fa fa-arrow-left"></i> 
+			</a> &nbsp;	
+			<a href="#" id="nextPage">
+				Próximo <i class="fa fa-arrow-right"></i>
+			</a> -->
+		</div>		
+	</div>	
+</body>
+</html>

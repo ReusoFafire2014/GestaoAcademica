@@ -1,0 +1,175 @@
+
+body{
+    background-color: #2E4d7B;
+}
+
+p b{
+    color: white;
+}
+
+.imagem {
+    width: 70px;
+    height: 70px;
+}
+
+.div_conteudo{
+    text-align: left;   
+}
+
+.div_conteudo2{
+    text-align: center; 
+}
+
+.div_header {
+    color: #ffffff;
+    background-color:  #46b8da;
+    border-color: #46b8da;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.div_header_1 {
+    color: #ffffff;
+    background-color:  #46b8da;
+    border-color: #46b8da;
+    text-align: center;
+    width: 100%;
+}
+
+.div_header_2 {
+    color: #ffffff;
+    background-color:  #46b8da;
+    border-color: #46b8da;
+    text-align: center;
+    width: 100%;
+}
+
+.div_header h1{
+
+}
+
+.negrito{
+ font-weight: 900; 
+}
+
+.div_conteudo .botao {
+    background-color:  white;   
+}
+
+.div_conteudo  .label {
+    font-size: 13px;
+    font-style: italic;
+    background-color: #2E4d7B;
+    color: white;
+    width: 400px;
+    border: 0 solid #2E4d7B;
+    height: 45px;
+}
+
+.div_alinhar_right{
+    text-align: right;
+    width: 200px;
+    margin-left: -30px;
+}
+
+#sse2{    
+    background-color: #46b8da;
+    height: 10px;
+    padding-top: 15px;   
+    margin-bottom: 100px;
+    border-radius: 6px;   
+}
+
+#sses2
+{
+   margin-top: -33px;
+}
+
+#sses2 ul 
+{ 
+    position: relative;
+    list-style-type: none;
+    float:left;   
+}
+
+#sses2 li
+{
+    float:left;
+    list-style-type: none;
+    padding-top:-40px;    
+    padding-bottom:40px;
+    background-image:none;
+}
+
+#sses2 li a
+{
+    height:30px;
+    padding-top: 8px;
+    margin: 0 20px;
+    color: black;
+    font: normal 12px arial;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    display: block;
+    position: relative;
+    z-index: 2;
+    font-weight: 900;
+}
+
+#tituloid {
+    width: 300px;
+}
+
+#autorid{
+    width: 300px;
+}
+
+#anoid{
+    width: 74px;
+}
+
+#paginasid{
+    width: 74px;
+}
+
+#generoid{
+    width: 290px;
+}
+
+#editoraid{
+    width: 290px;
+}
+
+.div_formulario{
+    text-align: left;   
+}
+
+form label{
+    color: white;
+    font-family: arial-black;       
+}
+
+.tabela_grid{
+    border: 1px solid black;
+    width: 600px;    
+}
+
+.div_grid table{
+    text-align: center;
+
+}
+
+table {
+    border: 2px groove;
+    width: 650px;
+    border-color: #c0392b;
+}
+
+thead {
+    background: #3498db;
+}
+
+td {
+    background: #95a5a6;
+}
