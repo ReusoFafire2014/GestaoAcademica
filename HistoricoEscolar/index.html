@@ -51,23 +51,35 @@
 
 		<div class="page-header">
 			<h1>Histórico Escolar</h1>
-	    </div>
+	 </div>   
+   <div id="tasks-output" style="display: none;"></div>     
 		<p>
-			<form id="form1" action="" onsubmit="exibirMensagemPadrao()">
+      <form id="form-task" onsubmit="exibirMensagem()">
         <p>
-          <label id="nome">Nome:</label>
+          <label>Nome:</label>
           <br />
-          <input type="text" id="nomeText" placeholder="Informe seu nome" required/>
+          <input type="text" name="Nome" placeholder="Informe o nome do Aluno" required />
         </p>
         <p>
-          <label id="matricula">Matrícula:</label>
+          <label>Disciplina:</label>
           <br />
-          <input type="text" id="matriculaText" placeholder="Informe sua matrícula" required/>
+          <input type="text" name="Disciplina" placeholder="Informe a disciplina" required />
         </p>
         <p>
-          <button id= "enviarButton" class="btn btn-success" >Pesquisar Notas</button>
+          <label>Nota 1:</label>
+          <br />
+          <input type="text" name="Nota1" placeholder="Informe a nota da 1ª prova" required />
+        </p>
+        <p>
+          <label>Nota 2:</label>
+          <br />
+          <input type="text" name="Nota2" placeholder="Informe a nota da 2ª prova" required />
+        </p>
+        <p>
+          <input type="submit" value="Salvar">
         </p>
       </form>
+			
 		</p>
 	</div>
 
