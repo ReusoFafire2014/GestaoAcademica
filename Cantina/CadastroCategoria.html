@@ -17,18 +17,28 @@
 <body>  
   <div class="container">
     <!-- Menu principal -->
-      <div class="masthead">
-        <h1>Cantina da Universidade Koala</h1>
-        <div role="navigation">
-          <ul class="nav nav-justified">            
-            <li><a href="MenuPrincipal.php">Home</a></li>
-            <li><a href="CadastroProduto.php">Produtos</a></li>
-            <li class="active"><a href="ListarCategoria.php">Categorias de produtos</a></li>
-            <li><a href="Cardapio.php">Cardápio</a></li>
-            <li><a href="ControleVendas.php">Vendas</a></li>                 
-          </ul>
+       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-      </div>  
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="MenuPrincipal.html">Home</a></li>            
+            <li><a href="CadastroProduto.html">Produtos</a></li>
+            <li class="active"><a href="ListarCategoria.html">Categorias de produtos</a></li>
+            <li><a href="Cardapio.html">Cardápio</a></li>
+            <li><a href="ControleVendas.html">Vendas</a></li>    
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>      
+    </nav>    
+    <br/><br/><br/> 
 
     <form class="form-signin" role="form" method = "POST" action = "controladores/contolador_categoria.php?acao=cadastrar">
         <h2 class="form-signin-heading">Cadastre a Categoria</h2>        
