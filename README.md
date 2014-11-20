@@ -12,8 +12,9 @@ Módulos
 |Biblioteca | 5|  2| 1 |- | 1 | 1 |- |
 |Professores| 4 |1 |1 | 1 | 1 | - | - |
 |Histórico | 4 |-| 1 | 2| - | 1 |- |
+|Cantina | 3.01 |0.01 |1 |2 | - | - | -|
 |Alunos  | 1.2 | 0.2|1 | - |-  | - |- |
-|Cantina | 1.01 |0.01 |1 |- | - | - | -|
+
 
 - Estacionamento
 	- 	Heitor e Ravel
