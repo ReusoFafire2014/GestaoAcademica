@@ -7,9 +7,9 @@ Módulos
 	
 |Módulo  | Total | Pages| Github(1)|[Bootstrap(4)](http://getbootstrap.com/examples/starter-template/)|Cadastro(3)|Listar(2)|Salvar(5)|
 |--------|-------|------|----------|-------------|-----------|---------|---------|
-|Cantina | 8.01 |0.01 |1 |2 | 2 | 2 | BD (1)|
+|Manutenção| 9.6 |0.1| 1 | 2.5 | 2.5 | 2.5 | STORAGE(1)|
+|Cantina | 9.51 |0.01 |1 |2.5 | 2.5 | 2.5 | BD (1)|
 |Estacionamento |6.75| 0.75 | 1 | - | 2 | 2 | STORAGE(1)|
-|Manutenção| 5.1 |0.1| 1 | 2 | 1 | 1 | -|
 |Biblioteca | 5|  2| 1 |- | 1 | 1 |- |
 |Professores| 4 |1 |1 | 1 | 1 | - | - |
 |Histórico | 4 |-| 1 | 2| - | 1 |- |
