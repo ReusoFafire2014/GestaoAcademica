@@ -9,12 +9,11 @@ Módulos
 |--------|-------|------|----------|-------------|-----------|---------|---------|
 |Manutenção| 9.6 |0.1| 1 | 2.5 | 2.5 | 2.5 | STORAGE(1)|
 |Cantina | 9.51 |0.01 |1 |2.5 | 2.5 | 2.5 | BD (1)|
-|Estacionamento |6.75| 0.75 | 1 | - | 2 | 2 | STORAGE(1)|
-|Biblioteca | 5|  2| 1 |- | 1 | 1 |- |
-|Professores| 4 |1 |1 | 1 | 1 | - | - |
 |Histórico | 4 |-| 1 | 2| - | 1 |- |
 |Alunos  | 3.2 | 0.2|1 | - |1  | 1 |- |
-
+|Biblioteca | (3)|  2| 1 |- | (1) | (1) |- |
+|Professores| (2) |1 |1 | (1) | (1) | - | - |
+|Estacionamento |(1.75)| 0.75 | 1 | - | (2) | (2) | (STORAGE(1)|
 
 - Estacionamento
 	- 	Heitor e Ravel
