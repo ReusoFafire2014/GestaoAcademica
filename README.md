@@ -7,13 +7,13 @@ Módulos
 	
 |Módulo  | Total | Pages| Github(1)|[Bootstrap(4)](http://getbootstrap.com/examples/starter-template/)|Cadastro(3)|Listar(2)|Salvar(5)|
 |--------|-------|------|----------|-------------|-----------|---------|---------|
+|Estacionamento |10| 0.75 | 1 | 2.5 | 2.5 | 2.5 | (STORAGE(1)|
 |Manutenção| 9.6 |0.1| 1 | 2.5 | 2.5 | 2.5 | STORAGE(1)|
 |Cantina | 9.51 |0.01 |1 |2.5 | 2.5 | 2.5 | BD (1)|
 |Histórico | 9.5 |-| 1 | 2.5| 2.5 | 2.5 |STORAGE(1) | 
 |Alunos  | 3.2 | 0.2|1 | - |1  | 1 |- |
 |Biblioteca | (3)|  2| 1 |- | (1) | (1) |- |
 |Professores| (2) |1 |1 | (1) | (1) | - | - |
-|Estacionamento |(1.75)| 0.75 | 1 | - | (2) | (2) | (STORAGE(1)|
 
 - Estacionamento
 	- 	Heitor e Ravel
