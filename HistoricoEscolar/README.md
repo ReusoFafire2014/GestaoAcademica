@@ -37,14 +37,14 @@ Serviços de aplicativos em nuvem, ou Software as a Service (SaaS), utilizam a w
 Serviços de Cloud Platform, ou Plataforma como Serviço (PaaS), são usados ​​para aplicações e outros tipos de desenvolvimento, ao fornecer componentes nuvem de software. PaaS faz o desenvolvimento, teste e implantação de aplicativos de forma rápida, simples e com baixo custo. Com esta tecnologia, as operações da empresa, ou de um fornecedor de terceiros, pode gerenciar sistemas operacionais, virtualização, servidores, armazenamento, redes, etc.
 
 ##### Cite um exemplo de componente encontrado em cada um desses repositórios públicos: Packagist, NPM, Rubygems, Pypi.
-Packagist - Monolog (https://packagist.org/packages/monolog/monolog)
-NPM - Express (https://www.npmjs.org/package/express)
-Rubygems - a2z (https://rubygems.org/gems/a2z)
-Pypi - PyBERT (https://pypi.python.org/pypi/PyBERT/0.3.1)
+- Packagist - Monolog (https://packagist.org/packages/monolog/monolog)
+- NPM - Express (https://www.npmjs.org/package/express)
+- Rubygems - a2z (https://rubygems.org/gems/a2z)
+- Pypi - PyBERT (https://pypi.python.org/pypi/PyBERT/0.3.1)
 
 ##### Dê exemplo de dois frameworks front end diferentes dos utilizados em sala.
-LESS Framework (http://lessframework.com/)
-PhoneGap (http://phonegap.com/)
+- LESS Framework (http://lessframework.com/)
+- PhoneGap (http://phonegap.com/)
 
 ##### Quais as vantagens/motivações para utilização de um framework como esse? Quais as desvantagens?
 
