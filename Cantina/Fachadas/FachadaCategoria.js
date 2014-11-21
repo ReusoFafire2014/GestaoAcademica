@@ -39,11 +39,11 @@ function CategoriaCtrl($scope, $http) {
             "DESCRICAO": ""};             
 
         $.post("Abstract/AbsControladorCatOperacao.php", {json: dados}).success(function() {
-
-            ng.getCategorias();
-            ng.Limpar();
-            $("#confirmacao").modal('hide');
+            
         });
+        ng.getCategorias();
+        ng.Limpar();
+        $("#confirmacao").modal('hide');
     };       
 
     ng.Salvar = function() {
@@ -65,18 +65,19 @@ function CategoriaCtrl($scope, $http) {
         }
         else
         {                    
-            $.post("Abstract/AbsControladorCatOperacao.php", {json: dados}).success(function() {
-
-                $("#cadastro").modal('hide');
-                $("#infocadastro").show(400);
-                $("#infocadastro").html("<strong>Informação. </strong> Dados salvos com sucesso.");
-                $(document).ready(function() {
-                    setTimeout("$('#infocadastro').hide();", 2000);
-                });
+            $.post("Abstract/AbsControladorCatOperacao.php", {json: dados}).success(function() {                
                 
-                ng.getCategorias();
-                ng.Limpar();
             });
+
+            $("#cadastro").modal('hide');
+            $("#infocadastro").show(400);
+            $("#infocadastro").html("<strong>Informação. </strong> Dados salvos com sucesso.");
+            $(document).ready(function() {
+                setTimeout("$('#infocadastro').hide();", 2000);
+            });
+            
+            ng.getCategorias();
+            ng.Limpar();
         }
 
     };
