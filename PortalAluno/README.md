@@ -1,38 +1,66 @@
 README
 
 ALUNOS:
-Maurício Dornellas
+MaurÃ­cio Dornellas
 Manoela Sousa
 
-OBJETIVO DO MÓDULO:
+OBJETIVO DO MÃ“DULO:
 
-Portal do Aluno / Cadastro do Usuário.
+Portal do Aluno / Cadastro do UsuÃ¡rio.
 Praticar alguns conceitos sobre Reuso de software
 
 O QUE FOI FEITO:
 
-1- Criação de página web com formulário para cadastrar as informações dos usuários...
+<<<<<<< HEAD
+Criação de página web com formulário para cadastrar as informações dos usuários...
 
-2- QUESTIONÁRIO:
+QUESTIONÁRIO:
 
-3- O que é reuso de software?
+1- O que é reuso de software?
 
-4- Quais os benefícios esperados do reuso de software?
+2- Quais os benefícios esperados do reuso de software?
 
-5- Diferencie Reuso Ad Hoc de Reuso Sistemático.
+3- Diferencie Reuso Ad Hoc de Reuso Sistemático.
 
-6- Diferencie componentes de software e frameworks.
+4- Diferencie componentes de software e frameworks.
 
-7- O que significa na prática a sigla: Service Oriented Architecture?
+5- O que significa na prática a sigla: Service Oriented Architecture?
 
-8- Diferencie IaaS (Infrastructure as a Service) de PaaS (Platform as a Service).
+6- Diferencie IaaS (Infrastructure as a Service) de PaaS (Platform as a Service).
 
-9- Cite um exemplo de componente encontrado em cada um desses repositórios públicos: Packagist, NPM, Rubygems, Pypi.
+7- Cite um exemplo de componente encontrado em cada um desses repositórios públicos: Packagist, NPM, Rubygems, Pypi.
 
-10- Dê exemplo de dois frameworks front end diferentes dos utilizados em sala.
+8- Dê exemplo de dois frameworks front end diferentes dos utilizados em sala.
 
-11- Quais as vantagens/motivações para utilização de um framework como esse? Quais as desvantagens?
+9- Quais as vantagens/motivações para utilização de um framework como esse? Quais as desvantagens?
 
-12- Diferencie reuso generativo e reuso composicional.
+10- Diferencie reuso generativo e reuso composicional.
 
-13- Apresente vantagens e desvantagens do reuso generativo e do composicional.
+11- Apresente vantagens e desvantagens do reuso generativo e do composicional.
+=======
+CriaÃ§Ã£o de pÃ¡gina web com formulÃ¡rio para cadastrar as informaÃ§Ãµes dos usuÃ¡rios...
+
+QUESTIONÃRIO:
+
+1- O que Ã© reuso de software?
+
+2- Quais os benefÃ­cios esperados do reuso de software?
+
+3- Diferencie Reuso Ad Hoc de Reuso SistemÃ¡tico.
+
+4- Diferencie componentes de software e frameworks.
+
+5- O que significa na prÃ¡tica a sigla: Service Oriented Architecture?
+
+6- Diferencie IaaS (Infrastructure as a Service) de PaaS (Platform as a Service).
+
+7- Cite um exemplo de componente encontrado em cada um desses repositÃ³rios pÃºblicos: Packagist, NPM, Rubygems, Pypi.
+
+8- DÃª exemplo de dois frameworks front end diferentes dos utilizados em sala.
+
+9- Quais as vantagens/motivaÃ§Ãµes para utilizaÃ§Ã£o de um framework como esse? Quais as desvantagens?
+
+10- Diferencie reuso generativo e reuso composicional.
+
+11- Apresente vantagens e desvantagens do reuso generativo e do composicional.
+>>>>>>> 74dc77b3590ba0fb4cebd8c4fafe39f791d47776
