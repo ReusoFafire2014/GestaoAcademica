@@ -11,7 +11,7 @@ Gestão Acadêmica
 ### O QUE FOI FEITO
 - Blá
 
-### Questionário
+### QUESTIONÁRIO
 	
 ##### O que é reuso de software?
 Reuso de software é quando utilizamos componentes/artefatos (código, planos de testes, conhecimento, entre outros) já existentes em um novo produto.
@@ -47,7 +47,22 @@ Serviços de Cloud Platform, ou Plataforma como Serviço (PaaS), são usados ​
 - PhoneGap (http://phonegap.com/)
 
 ##### Quais as vantagens/motivações para utilização de um framework como esse? Quais as desvantagens?
+<ul>
+	<li>Vantagens</li>
+		<ul>
+			<li>Utilização de componentes maduros e testados;</li>
+			<li>Boa documentação, facilitando o uso por toda a equipe.</li>
+		</ul>
+	<li>Desvantagens</li>
+		<ul>
+			<li>O projeto precisa se adaptar ao framework, isso pode levar a excessivas modificações para adaptar o framework;</li>
+			<li>Normalmente, o framework contém código que nunca serão utilizados no projeto;</li>
+			<li>Nem sempre o código é bem organizado e com boa semântica.</li>
+		</ul>
+</ul>
 
 ##### Diferencie reuso generativo e reuso composicional.
+- Reuso generativo - consiste na reutilização no nível de especificação, através do emprego de geradores de código ou de aplicações.
+- Reuso composicional - é a utilização de componentes existentes como blocos para construção de um novo sistema.
 
 ##### Apresente vantagens e desvantagens do reuso generativo e do composicional.
