@@ -2,19 +2,17 @@
 <head>
 	<meta charset = "UTF-8">
 	<title>Cadastro de Produtos</title>
-	<link href="dist/css/bootstrap.min.css" rel="stylesheet">    
+	<link href="dist/css/bootstrap.min.css" rel="stylesheet">  
+  <link href="dist/css/bootstrap.css" rel="bootstrap">
   <link href="dist/css/bootstrap-theme.css" rel="bootstrap-theme">
   <link rel="stylesheet" href="dist/css/justified-nav.css">
   <link rel="stylesheet" href="dist/css/estilo.css">
-    
+
+  <script src="dist/js/app.js"></script>
+  <script src="dist/js/bootstrap.js"></script>  
+  <script src="dist/js/bootstrap.min.js"></script>  
   <script src="dist/js/npm.js"></script>    
   <link rel="icon" href="favicon.ico">
-
-  <script src="dist/js/jquery-1.11.1.min.js"></script>
-  <script src="dist/js/angular.min.js"></script>
-  <!--<script src="dist/js/angular.min.js.map"></script>-->
-  <script src="dist/js/bootstrap.min.js"></script>  
-  <script type="text/javascript" src="Fachadas/FachadaCategoria.js"></script>
 </head>
 <body>  
   <div class="container">
@@ -31,7 +29,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>            
+            <li><a href="MenuPrincipal.html">Home</a></li>            
             <li class="active"><a href="CadastroProduto.html">Produtos</a></li>
             <li><a href="ListarCategoria.html">Categorias de produtos</a></li>
             <li><a href="Cardapio.html">Cardápio</a></li>
@@ -41,7 +39,7 @@
       </div>      
     </nav>    
     <br/><br/><br/> 
-
+<!--
     <form class="form-signin" role="form" method = "POST" action = "php/contolador_produto.php?acao=cadastrar">
         <h2 class="form-signin-heading">Cadastre os produtos</h2>        
         <input type="text" id="cod_produto" name="cod_produto" class="form-control" placeholder="Código do produto" required autofocus>
@@ -51,7 +49,21 @@
 
         <button class="btn btn-lg btn-primary btn-block" type="submit">Cadastrar</button>
       </form>
-    <form>    
+    <form> -->
+
+    <div id="tasks-output" style="visibility:hidden; display:none"></div>
+    <form id="form-task" class="form-signin" >
+        <h2 class="form-signin-heading">Cadastre os produtos</h2>        
+        <input type="text" id="cod_produto" name="Codigo" class="form-control" placeholder="Código do produto" required autofocus>
+        <label for="cod_produto" class="sr-only">Código do produto</label>
+        <label for="desc_produto" class="sr-only">Descricao</label>
+        <input type="text" id="desc_produto" name="Descricao" class="form-control" placeholder="Descricao" required>
+        <label for="preco_produto" class="sr-only">Preco</label>
+        <input type="text" id="Preco" name="Preco" class="form-control" placeholder="Preco" required>        
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit" value="Salvar">Cadastrar</button>
+      </form>      
+  </div>   
   </div>
 </body>
 </html>

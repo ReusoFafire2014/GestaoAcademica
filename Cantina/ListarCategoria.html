@@ -42,10 +42,18 @@
         </div><!--/.nav-collapse -->
       </div>      
     </nav>    
+
     <br/><br/><br/>        
-      <button class='btn btn-lg btn-primary btn-block' onClick="location.href='CadastroCategoria.html'">  Nova Categoria</button>           
-      <div class='row'>        
-        <h2 class='sub-header'>Categoria de Produtos</h2> 
+    <!-- Default panel contents -->
+    <div class="panel-heading"><h1 class="panel-title"><h2> Categorias de produtos</h2> 
+
+            <span class="pull-right">
+                <span id="btnNovo" class="label label-primary" data-toggle="modal" data-target="#cadastro" ng-click="Limpar();">
+                    <i class="glyphicon glyphicon-plus"></i> Novo</span></span> 
+        </h1>
+    </div>  
+      
+      <div class='row'>                
         <div class='table-responsive' ng-show="ListaCategoria.length">
           <table class='table table-striped'>
             <thead>
@@ -60,13 +68,69 @@
               <tr class="animate-repeat" ng-repeat="cat in ListaCategoria">
                 <td>{{cat.ctp_codigo}}</td>
                 <td>{{cat.ctp_descricao}}</td>
-                <td><a href = 'CadastroCategoria.html'><img src='dist/img/A_Edit_Lg_N.png'></a></td>
-                <td><a href='#'><img src='dist/img/iconeExcluir.gif'></a></td>
+                <td><span ng-click="Editar(cat.ctp_codigo, cat.ctp_descricao)" class="btn btn-info btn-xs"><i class="glyphicon glyphicon-pencil"></i></span></td>
+                <td><span class="btn btn-danger btn-xs" ng-click="ConfirmaExclusao(cat.ctp_codigo)"><i class="glyphicon glyphicon-remove"></i></span></td>
               </tr>
             </tbody>
           </table>
         </div>
-      </div>           
+      </div>       
+
+      <!-- Formulario de confirmacao -->
+      <div class="modal fade " id="confirmacao">
+          <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">Confirmação</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>Confirma Exclusão ?</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-success" ng-click="Excluir(codexclusao)">Sim</button>
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Não</button>                    
+                  </div>
+              </div>
+          </div>
+      </div>          
+
+      <!-- Formulario de cadastro -->
+      <div class="modal fade" id="cadastro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Tipos de Categorias</h4>
+                  </div>
+                  <div class="modal-body">
+                      <form class="form-horizontal" role="form">
+                          <div class="form-group">
+                              <label for="codigo" class="col-sm-2 control-label">Código</label>
+                              <div class="col-sm-5">
+                                  <input type="text" class="form-control" id="codigo" placeholder="CÓDIGO" required ng-model="edtcodigo" >
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="descricao" class="col-sm-2 control-label">Descrição</label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="descricao" placeholder="DESCRIÇÃO" required ng-model="edtdescricao">
+                              </div>
+                          </div>
+                      </form>
+                      <div id="requerido" class="alert alert-danger"  style="display: none;">
+
+                      </div>
+                  </div>
+                  <div class="modal-footer">               
+                      <button type="button" class="btn btn-success" ng-click="Salvar()" data-loading-text="Salvando...">
+                          <i class="glyphicon glyphicon-ok"></i> Salvar</button>
+                      <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="$('#requerido').hide();">
+                          <i class="glyphicon glyphicon-remove"></i> Fechar</button>
+                  </div>
+              </div>
+          </div>
+      </div>
       
   </div> <!-- Container -->
 </body>

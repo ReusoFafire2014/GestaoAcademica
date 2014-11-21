@@ -1,4 +1,4 @@
-<<?php 
+<?php 
 include "../ConexaoBD/conexaoBDMySql.php";
 
   function verifica_existe($cod_categoria){  
@@ -25,18 +25,15 @@ include "../ConexaoBD/conexaoBDMySql.php";
     }     
     $conexao = abre_conexao_manipulacao();
     
-    aplicar_mudancas($conexao,$sql);     
+    $result = aplicar_mudancas($conexao,$sql);     
   }
 
-  $acao =  'cadastrar';//$_GET["acao"];
+  function excluir_categoria($codigo){
+    $sql = "delete from tbl_categoria_produto_ctp where ctp_codigo=$codigo";      
 
-  if ($acao != "cadastrar"){
-    $cod_categoria = $_POST["cod_categoria"];
-    $desc_categoria = $_POST["desc_categoria"];
-
-    salvar_categoria($cod_categoria,$desc_categoria);  
-
-    // header("location:../ListarCategoria.php");    
+    $conexao = abre_conexao_manipulacao();
+    
+    $result = aplicar_mudancas($conexao,$sql);     
   }
 
  ?>
