@@ -13,7 +13,7 @@ Módulos
 |Histórico | 9.5 |-| 1 | 2.5| 2.5 | 2.5 |STORAGE(1) | 
 |Alunos  | 3.2 | 0.2|1 | - |1  | 1 |- |
 |Biblioteca | (3)|  2| 1 |- | (1) | (1) |- |
-|Professores| (2) |1 |1 | (1) | (1) | - | - |
+|Professores| 4 |1 |1 | 1 | 1 | - | - |
 
 - Estacionamento
 	- 	Heitor e Ravel
