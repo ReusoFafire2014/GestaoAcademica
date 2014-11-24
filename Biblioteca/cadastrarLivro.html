@@ -1,54 +1,233 @@
+
 <!DOCTYPE html>
-<html>
+ <html class="no-js"> 
+    <head>
+        <!-- BASICS -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="shortcut icon" href="img/favicon.ico"/>
+        <title>Universidade Hogwarts</title>        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" /> 
+        <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/bootstrap.css"> 
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/script.js" ></script>
+        <!-- skin -->
+        <link rel="stylesheet" href="css/default.css">
+        <script type="text/javascript">         
+             function voltarHome() {
+               window.location= "index.html";     
+             };
+
+              function limparCampos() {
+               window.location= window.location;     
+             };
+        </script>
+    </head>  
+    <body>
+        <section id="header" class="appear"></section>
+        <div class="navbar navbar-fixed-top" role="navigation" 
+        data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" 
+        data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
+             <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="fa fa-bars color-white"></span>
+                    </button>
+                    <h1><a class="navbar-brand" href="index.html" data-0="line-height:90px;" data-300="line-height:50px;">      
+                         Universidade Hogwarts                      
+                    </a></h1>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">                
+                        <li><h3 style="color: white; font-size: 25px; font-weight: 800;">Cadastrar Livros</h3></li>                 
+                    </ul>
+                </div><!--/.navbar-collapse -->
+            </div>
+        </div>
+        <section class="featured">
+            <h3 class="align-center" style="margin-top: -75px!important; color: white; width:700px">Dados para Cadastro</h3> 		
+            <div  class="row mar-left55">               
+                <div class="col-md-8 col-md-offset-2">                      
+                    <div class="cform consultar-form" >                         
+                      <form id="form_task" class="mar-left55" onSubmit="exibirMensagem()" >                            
+                                <div class="form-group" style="width:600px" >
+                                    <label>Título:</label> 
+                                    <input type="text" name="tituloid" placeholder="Ex.: Percy Jackson: O ladrão de raios" required />
+                                </div>          
+                                <div class="form-group"style="width:600px">
+                                    <label>Autor:</label> 
+                                    <input type="text" name="autorid" placeholder="Ex.: Percy Jackson: O ladrão de raios"  required />
+                                </div>      
+                                <div class="form-group"style="width:600px">
+                                    <label>Ano:</label> 
+                                    <input type="text" name="anoid" placeholder="Ex.: 2008" required />
+                                </div>  
+                                <div class="form-group"style="width:600px">
+                                    <label>Páginas:</label> 
+                                    <input type="text" name="paginasid" placeholder="Ex.: 2008" required />
+                                </div>              
+                                <div class="form-group"style="width:600px">
+                                    <label>Gênero:</label>
+                                    <input type="text" name="generoid" placeholder="Ex.: Aventura" required />
+                                </div>              
+                                <div class="form-group"style="width:600px">
+                                    <label>Editora:</label> 
+                                    <input type="text" name="editoraid" placeholder="Ex.: Globo" required /> 
+                                </div>                               
+                                <div class="align-center" style="width:600px">                                      
+                                    <input type="submit" class="btn" value="Salvar" />&nbsp;&nbsp;
+                                    <input type="button" class="btn" value="Limpar"  
+                                    onclick="limparCampos();" />&nbsp;&nbsp; 
+                                    <input type="button" class="btn" value="Voltar" 
+                                    onclick="voltarHome();"  />
+                                    <br/><br/>                                    
+                                </div> 
+                        </form>
+                    </div>   
+                    <div class="span12" style="border: 2px solid transparent; width:700px" id="tasks-output"></div>
+                </div>              
+            </div>  
+
+        </section>
+        <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+        <script src="js/jquery.isotope.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/jquery.fancybox.pack.js"></script>
+        <script src="js/skrollr.min.js"></script>       
+        <script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+        <script src="js/jquery.localscroll-1.2.7-min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="js/jquery.appear.js"></script>
+        <script src="js/validate.js"></script>
+        <script src="js/main.js"></script>    
+       
+    </body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<!-- <html>
 <link rel="stylesheet" type="text/css" href="css/estilos.css">
+<!--<link href="http:////maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+    rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    rel="stylesheet">-->
+<!--<link rel="Stylesheet" type="text/css" href="css/bootstrap.css">-->
+<!-- <link rel="Stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="Stylesheet" type="text/css" href="css/bootstrap-theme.css">
+<link rel="Stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/script.js" ></script>
+
 <head>
-	<meta charset="UTF-8">
-	<title>Biblioteca Hogwarts</title>
+    <meta charset="UTF-8">
+    <title>Biblioteca Hogwarts</title>
 </head>
 <body>
-	<div class="div_header">
-		<div class="div_header_2">
-			<br />
-			<img src="img/imgLogo1.png" class="imagem">		
-			<div class="div_header_1">			
-				<h1>Cadastrar Livros</h1>
-			</div>	
-		</div>	
-    </div>	
-	<div class="div_conteudo2">	
-		<br />
-		<div id="div_formulario">
-			<form name="formulario_cadastrar_livros">
-				<p class="titulo"> 
-					<label for="titulo">Título</label> &nbsp;
-					<input type="text"  id="tituloid" placeholder="Ex.: Percy Jackson: O ladrão de raios" required="required" name="titulo" /> 
-				</p>				
-				<p class="autor"> 
-					<label for="autor">Autor</label> &nbsp;
-					<input type="text"  id="autorid" placeholder="Ex.: Percy Jackson: O ladrão de raios" required="required" name="autor" /> 
-				</p>	
-				<p class="ano_paginas"> 
-					<label for="ano_paginas">Ano</label> &nbsp;&nbsp;
-					<input type="text"  id="anoid" placeholder="Ex.: 2008" required="required" name="ano" /> &nbsp; &nbsp;
-					<label for="ano_paginas">Número de páginas</label> &nbsp;
-					<input type="text"  id="paginasid" placeholder="Ex.: 2008" required="required" name="paginas" /> 
-				</p>	
-				<p class="genero"> 
-					<label for="genero">Gênero</label> &nbsp;
-					<input type="text"  id="generoid" placeholder="Ex.: Aventura" required="required" name="genero" /> 
-				</p>				
-				<p class="editora"> 
-					<label for="editora">Editora</label> &nbsp;
-					<input type="text"  id="editoraid" placeholder="Ex.: Globo" required="required" name="editora" /> 
-				</p>
-				<br />
-				<p class="botao"> 
-					 <input type="submit" name="btnSalvar" value="Salvar" />  &nbsp;&nbsp;
-					 <input type="submit" name="btnLimpar" value="Limpar" />
-				</p>
-
-			</form>
-		</div>
-	</div>	
+    <div class="div_header">
+        <div class="div_header_2">
+            <br />
+            <img src="img/imgLogo1.png" class="imagem">
+            <div class="div_header_1">
+                <h1>Cadastrar Livros</h1>
+            </div>
+        </div>
+    </div>
+    <div class="div_conteudo2">
+        <form id="form_task" onSubmit="exibirMensagem()" class="form-horizontal">
+            <div class="control-group">
+                <p class="titulo">
+                    <label for="titulo" class="control-label"><b>Título:</b></label>
+                    &nbsp;
+                    <input type="text" name="tituloid" placeholder="Ex.: Percy Jackson: O ladrão de raios" required />
+                </p>
+                <p class="autor">
+                    <label for="autor" class="control-label"><b>Autor:</b></label>
+                    &nbsp;
+                    <input type="text" name="autorid" placeholder="Ex.: Percy Jackson: O ladrão de raios"  required />
+                </p>
+                <p class="ano_paginas">
+                    <label for="ano_paginas" class="control-label">
+                    <b>Ano:</b></label>
+                    &nbsp;&nbsp;
+                    <input type="text" name="anoid" placeholder="Ex.: 2008" required />
+                    &nbsp; &nbsp;
+                    <label for="ano_paginas" class="control-label">
+                    <b>Número de páginas:</b></label>
+                    &nbsp;
+                    <input type="text" name="paginasid" placeholder="Ex.: 2008" required />
+                </p>
+                <p class="genero">
+                    <label for="genero" class="control-label">
+                    <b>Gênero:</b></label>
+                    &nbsp;
+                    <input type="text" name="generoid" placeholder="Ex.: Aventura" required />
+                </p>
+                <p class="editora">
+                    <label for="editora" class="control-label">
+                    <b>Editora:</b></label>
+                    &nbsp;
+                    <input type="text" name="editoraid" placeholder="Ex.: Globo" required />
+                </p>
+                <br />
+                <p>
+                    <input type="submit" class="btn btn-primary" value="Salvar" />
+                    &nbsp;&nbsp;
+                    <input type="clear" class="btn btn-primary" value="Limpar"/>
+                </p>
+                </div>
+        </form>
+    </div>
+    <br/>
+    <center>
+        <div class="span12" style="border: 2px solid white; width:700px" id="tasks-output"></div>
+    </center>
 </body>
-</html>
+</html>  -->
