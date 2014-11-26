@@ -15,6 +15,8 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/bootstrap-theme.css">
         <link rel="stylesheet" href="css/style.css">
+        <link href="css1/master.css" rel="stylesheet" media="screen">
+     	<script src="scripts.js" language="javascript"></script>
 		<!-- skin -->
 		<link rel="stylesheet" href="skin/default.css">
     </head>
@@ -33,13 +35,13 @@
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
 				
-						<li><a href="./modulos/Biblioteca">Biblioteca</a></li>
-						<li><a href="./modulos/Cantina">Cantina</a></li>
-						<li><a href="./modulos/Estacionamento">Estacionamento</a></li>
-						<li><a href="./modulos/HistoricoEscolar">Histórico</a></li>
-						<li><a href="./modulos/Patrimonio">Patrimônio</a></li>
+						<li><a href="./modulos/Biblioteca/home.html">Biblioteca</a></li>
+						<li><a href="./modulos/Cantina/index.html">Cantina</a></li>
+						<li><a href="./modulos/Estacionamento/index.html">Estacionamento</a></li>
+						<li><a href="./modulos/HistoricoEscolar/index.html">Histórico</a></li>
+						<li><a href="./modulos/Patrimonio/index.html">Patrimônio</a></li>
 						<li><a href="portal.html">Portal do Aluno</a></li>
-						<li><a href="./modulos/Professores">Professores</a></li>
+						<li><a href="./modulos/Professores/index.html">Professores</a></li>
 						<li class="dropdown">
 				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Dropdown <span class="caret"></span></a>
 				          <ul class="dropdown-menu" role="menu">
@@ -63,86 +65,62 @@
 					<div class="col-md-6 col-md-offset-3">
 						
 						<div class="align-center">
-							<i class="fa fa-flask fa-5x mar-bot20"></i>
-							<h2 class="slogan">Gestão Acadêmica</h2>
-							<p>
-							Bem-vindo(a)s ao sistema de gestão acadêmica da Fafire, desenvolvido pela turma de Desenvolvimento Orientado a Reuso. Aqui você poderá ter acesso aos módulos:  Biblioteca, Cantina, Estacionamento, Histórico, Patrimônio, Portal do Aluno e Professores.
-							</p>	
+							<!--<i class="fa fa-flask fa-5x mar-bot20"></i>-->
+							<h2 class="slogan">Portal do Aluno</h2>
+							<p>Todos os campos são de preenchimento obrigatório para que o cadastro do aluno possa ser realizado com sucesso.</p>
+							<br>
+							<div class="div_conteudo"> <!--class="div_conteudo" -->
+        				 	<div id="div_filho">
+							<form action="grava_dados.php" method="Post" name="frmCadCli" onsubmit="Javascript:return testaFrmCadastro();"> 
+
+						       <p>
+							      <label for="nome">Nome:</label>
+							       <br>
+							      <input type="text" name="nomAluno" value="" placeholder="Ex.: Maurício Dornellas" size="61px">
+						       </p>
+						            
+						       <p>
+							      <label>Matrícula:</label>
+							       	<br>
+							      <input type="text" name="matAluno" value="" placeholder="Ex.: 04567850401" size="61px">
+						       </p>
+						            
+						       <p>
+						          <label for="email">E-mail:</label>
+						          <br>
+						          <input type="text" name="email" value="" placeholder="Ex.: teste@test.com.br" size="61px">
+						       </p>
+
+						       <p>
+						          <label for="confemail">Confirmar e-mail:</label>
+						       		<br>
+						          <input class="" type="text" name="confirmaEmail" value="" placeholder="Ex.: teste@test.com.br" size="61px">
+						       </p>
+
+						       <p>
+						          <label for="senha">Senha:</label>
+						          	<br>
+						          <input type="password" name="senAluno" value=""  placeholder="Ex.: 12345678" size="61px">
+						       </p> 
+						     
+						       <p>
+						          <label for="confsenha">Confirmar Senha</label>
+						          <br>
+						          <input type="password" name="confirmarSenha" value="" placeholder="Ex.: 12345678" size="61px">
+						       </p>
+
+						            <input type="submit" class="btn btn-info" name="btnSalvar" value="Salvar"/>&nbsp;
+						            <input type="reset" class="btn btn-info" name="btnCancelar" value="Cancelar"/>
+						            <input type="reset" class="btn btn-info" name="btnListarAlunos" value="Listar Alunos"/>
+					        </form>
+						</div>
+						</div>		
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		
-		<!-- services -->
-		<section id="section-services" class="section pad-bot30 bg-white">
-		<div class="container"> 
-		
-			<div class="row mar-bot40">
-				<div class="col-lg-4" >
-					<div class="align-center">
-						<i class="fa fa-code fa-5x mar-bot20"></i>
-						<h4 class="text-bold">Interação</h4>
-						<p>Canal interativo com a comunidade acadêmica da Fafire
-						</p>
-					</div>
-				</div>
-					
-				<div class="col-lg-4" >
-					<div class="align-center">
-						<i class="fa fa-terminal fa-5x mar-bot20"></i>
-						<h4 class="text-bold">Agilidade</h4>
-						<p>Agilidade na troca de informações.
-						</p>
-					</div>
-				</div>
-			
-				<div class="col-lg-4" >
-					<div class="align-center">
-						<i class="fa fa-bolt fa-5x mar-bot20"></i>
-						<h4 class="text-bold">Comodidade</h4>
-						<p>Comodidade no acesso aos diversos serviços disponíveis a comunidade.
-						</p>
-					</div>
-				</div>
-			
-			</div>	
-
-		</div>
-		</section>
-			
-		<!-- spacer section:testimonial -->
-		<section id="testimonials" class="section" data-stellar-background-ratio="0.5">
-		<div class="container">
-			<div class="row">				
-					<div class="col-lg-12">
-							<div class="align-center">
-										<div class="testimonial pad-top40 pad-bot40 clearfix">
-											<h5>
-												Missão - Oferecer ua educação integral de qualidade promovendo a formação humana e profissional comprometida com a construção de uma sociedade justa e fraterna, fundamentada em princípios éticos, cristãos e na instituição pedagógica de Paula Frassinetti. 
-											</h5>
-											
-										</div>
-
-								</div>
-							</div>
-					</div>
 				
-			</div>	
-		</div>	
-		</section>
-			
-		
-		<!-- spacer section:stats -->
-		
-	
-		<section id="parallax2" class="section parallax" data-stellar-background-ratio="0.5">	
-            <div class="align-center pad-top40 pad-bot40">
-                <blockquote class="bigquote color-white">Fafire - Tradição e Modernidade</blockquote>
-				<p class="color-white">Recife - 2014</p>
-            </div>
-		</section>
-
 		<!-- contact -->
 		<section id="section-contact" class="section appear clearfix">
 			<div class="container">
@@ -161,70 +139,10 @@
 							</address>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<div class="cform" id="contact-form">
-							<div id="sendmessage">
-								 Sua mensagem foi enviada. Obrigado!
-							</div>
-							<form action="contact/contact.php" method="post" role="form" class="contactForm">
-							  <div class="form-group">
-								<label for="name">Seu nome</label>
-								<input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" data-rule="maxlen:4" data-msg="Digite pelo menos 4 caracteres" />
-								<div class="validation"></div>
-							  </div>
-							  <div class="form-group">
-								<label for="email">Seu Email</label>
-								<input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" data-rule="email" data-msg="Utilize um email válido" />
-								<div class="validation"></div>
-							  </div>
-							  <div class="form-group">
-								<label for="subject">Assunto</label>
-								<input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" data-rule="maxlen:4" data-msg="Utilize pelo menos 8 letras no assunto." />
-								<div class="validation"></div>
-							  </div>
-							  <div class="form-group">
-								<label for="message">Mensagem</label>
-								<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor, escreva algo na mensagem"></textarea>
-								<div class="validation"></div>
-							  </div>
-							  
-							  <button type="submit" class="btn btn-theme pull-left">ENVIAR MENSAGEM</button>
-							</form>
-
-						</div>
-					</div>
-					<!-- ./span12 -->
-				</div>
-				
+				</div>		
 			</div>
-		</section>
-		<!-- map -->
-		<section id="section-map" class="clearfix">
-			<div id="map"></div>
 		</section>
 		
-	<section id="footer" class="section footer">
-		<div class="container">
-			<div class="row animated opacity mar-bot20" data-andown="fadeIn" data-animation="animation">
-				<div class="col-sm-12 align-center">
-                    <ul class="social-network social-circle">
-                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>				
-				</div>
-			</div>
-
-			<div class="row align-center copyright">
-					<div class="col-sm-12"><p>Copyright &copy; 2014 Amoeba - by <a href="http://bootstraptaste.com">Bootstraptaste</a></p></div>
-			</div>
-		</div>
-
-	</section>
 	<a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>	
 
 	<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
