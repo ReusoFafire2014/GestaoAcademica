@@ -3,8 +3,9 @@
   <meta charset="UTF-8">   
   <header>
     <title>Cadastro de Usuário</title>
-     <link href="css/master.css" rel="stylesheet" media="screen">
-     <script src="scripts.js" language="javascript"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/master.css" rel="stylesheet" media="screen">
+    <script src="scripts.js" language="javascript"></script>
 
   <?
   //PEGA OS DADOS ENVIADOS PELO FORMULÁRIO

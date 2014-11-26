@@ -2,8 +2,8 @@
   <html>
   <meta charset="UTF-8">   
   <header>
-    <title>Cadastro de Usuário</title>
-     <link href="css/master.css" rel="stylesheet" media="screen">
+    <title>Cadastro de Usuário</title>  
+    <link href="css/master.css" rel="stylesheet" media="screen">
      <script src="scripts.js" language="javascript"></script>
   </header>
   	<body>
@@ -13,35 +13,38 @@
               <h2><b>Cadastro de Usuário</b></h2>
             <br/>
           </center>
-        <br/>        
-        <div class="div_conteudo">
-        <div id="div_filho">
-          <form action="grava_dados.php" method="Post" name="frmCadCli" onsubmit="Javascript:return testaFrmCadastro();" > 
+        <br/>
+        <div class="row">        
+        <div class="div_conteudo" class="row"> <!--class="div_conteudo" -->
+        <div id="div_filho" class="row"> <!--id="div_filho" -->
+          <form action="grava_dados.php" method="Post" name="frmCadCli" onsubmit="Javascript:return testaFrmCadastro();"> 
             <h4>Nome:
-            <input type="text" name="nomAluno" value="" size="59px"></h4> <!--placeholder="Ex.: Maurício Dornellas"-->
+            <input type="text" name="nomAluno" value=""></h4> <!--placeholder="Ex.: Maurício Dornellas"-->
             <br>
             <h4>Mat.:
-            <input type="text" name="matAluno" value="" size="61px"></h4> <!--placeholder="Ex.: 04567850401"-->
+            <input type="text" name="matAluno" value=""></h4> <!--placeholder="Ex.: 04567850401" size="61px"-->
             <br>
             <h4>E-mail:
-            <input type="text" name="email" value="" size="59px"></h4>
+            <input type="text" name="email" value=""></h4>
             <br>
             <h4>Confirmar e-mail:
-            <input class="" type="text" name="confirmaEmail" value="" size="50px"></h4>
+            <input class="" type="text" name="confirmaEmail" value=""></h4>
             <br>
             <h4>Senha:
-            <input type="password" name="senAluno" value="" size="60px"></h4>
+            <input type="password" name="senAluno" value=""></h4>
             <br> 
             <h4>Confirmar Senha:
-            <input type="password" name="confirmarSenha" value="" size="50px"></h4>
+            <input type="password" name="confirmarSenha" value=""></h4>
             <br>
             <input type="submit" class="btn btn-info" name="btnSalvar" value="Salvar"/>&nbsp;
             <input type="reset" class="btn btn-info" name="btnCancelar" value="Cancelar"/>
             <input type="reset" class="btn btn-info" name="btnListarAlunos" value="Listar Alunos"/>
           </form>
+      </div>
         </div> 
         </div>
         <br> 
-      </div>         
+      </div>
+      </div> 
   	</body>
   </html>
