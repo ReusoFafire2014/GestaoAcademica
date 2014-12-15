@@ -12,8 +12,8 @@ Módulos
 |Estacionamento |10	| 0.75 	| 1 | 2.5 | 2.5 | 2.5 	| (STORAGE(1)|
 |Manutenção	| 9.6 	|0.1	| 1 | 2.5 | 2.5 | 2.5 	| STORAGE(1)|
 |Histórico 	| 9.5 	|-	| 1 | 2.5 | 2.5 | 2.5 	|STORAGE(1) | 
+|Alunos  	| 7 	| 0.5	| 1 |  2.5  |  1*  | 1* 	|1* |
 |Professores	| 4 	|1 	| 1 |  1  |  1  | - 	| - |
-|Alunos  	| 3.2 	| 0.2	| 1 |  -  |  1  | 1 	|- |
 
 - Estacionamento
 	- 	Heitor e Ravel
@@ -26,7 +26,7 @@ Módulos
 - Manutenção
 	- José Augusto, Lucas, Filipe
 - Alunos
-	- Manoela e Maurício
+	- Manoela e Maurício (*Substituído por trabalho escrito)
 - Biblioteca
 	- Claudiany e Daniele
 	
