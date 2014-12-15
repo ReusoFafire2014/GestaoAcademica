@@ -5,7 +5,7 @@ Projeto da Disciplina de Desenvolvimento Orientado a Reuso
 
 Módulos
 	
-|Módulo  | Total | Pages| Github(1)|[Bootstrap(4)](http://getbootstrap.com/examples/starter-template/)|Cadastro(3)|Listar(2)|Salvar(5)|
+|Módulo  | Nota | Pages| Github(1)|[Bootstrap(4)](http://getbootstrap.com/examples/starter-template/)|Cadastro(3)|Listar(2)|Salvar(5)|
 |--------|-------|------|----------|-------------|-----------|---------|---------|
 |Biblioteca 	| 10	|  2	| 1 | 2.5 | 2.5 | 2.5 	|STORAGE(1) |
 |Cantina 	| 10 	|0.01 	| 1 | 2.5 | 2.5 | 2.5 	| BD (1)/STORAGE(1)|
